@@ -5,16 +5,18 @@
 class pid
 {
 public:
-    pid(double k_p, double k_i, double k_d, double reference);
+    pid(double k_p, double k_i, double k_d);
 
-    double controlstep(double pos, double dt);
+    double compute(double error, double dt);
 
 private:
     double k_p = 0;
     double k_i = 0;
     double k_d = 0;
 
-    double reference = 0;
+    double e_prev = 0;
+    double e_i = 0;
+    double e_d = 0;
 };
 
 //#endif

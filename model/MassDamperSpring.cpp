@@ -13,12 +13,7 @@ void MassDamperSpring::doStep(const double force, const double dt)
     v = v + a * dt;
     x = x + v * dt;
 
-    /*std::cout   << "New state: [ x=" << x 
-                << " v=" << v
-                << " a=" << a
-                << " ]"
-                << std::endl;*/
-    std::cout << x << std::endl;
+    //std::cout << x << std::endl;
 };
 
 double MassDamperSpring::getPos()

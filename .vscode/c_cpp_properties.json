@@ -1,18 +1,15 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
             "includePath": [
-                "${default}",
-                "${workspaceFolder}/model",
-                "${workspaceFolder}/external/matplotlib-cpp",
-                "/usr/include/python3.8",
-                "${workspaceFolder}/controller"
+                "${default}"
             ],
-            "compilerPath": "/usr/bin/gcc",
+            "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
-            "intelliSenseMode": "linux-gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

@@ -1,2 +1,2 @@
 #create library
-add_library(model_lib MassDamperSpring.cpp)
+add_library(model_lib STATIC MassDamperSpring.cpp)

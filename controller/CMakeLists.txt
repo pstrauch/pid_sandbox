@@ -1,2 +1,2 @@
 #create library
-add_library(controller_lib pid.cpp)
+add_library(controller_lib STATIC pid.cpp)

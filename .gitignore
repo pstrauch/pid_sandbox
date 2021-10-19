@@ -1,1 +1,5 @@
 /build
+*.json
+control_u.txt
+position.txt
+time.txt
