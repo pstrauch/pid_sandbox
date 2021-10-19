@@ -6,7 +6,7 @@ int main()
 {
     //initialize objects
     MassDamperSpring system(0, 0, 1);
-    pid controller(5, 0, 0, 0.5); //ref = 0.5
+    pid controller(1, 1, 5, 0.5); //ref = 0.5
 
     const int runtime = 20;
     const double dt = 0.2; //timestamp
