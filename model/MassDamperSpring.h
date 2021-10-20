@@ -4,8 +4,13 @@
 
 class MassDamperSpring{
 public:
-    //constructor with initial acceleration, velocity and position
-    MassDamperSpring(const double a, const double v, const double x);
+    //constructor with parameters and initial acceleration, velocity and position
+    MassDamperSpring(   const double mass, 
+                        const double spring_constant,
+                        const double damping_coeff,
+                        const double a0, 
+                        const double v0, 
+                        const double x0);
 
     //compute variables w.r.t timestamp dt
     void doStep(const double force, const double dt);
@@ -21,8 +26,8 @@ private:
 
     //constants
     const double m = 1;     //mass
-    const double b = 0.3;   //damping
     const double k = 1;     //spring
+    const double b = 0.3;   //damping
 };
 
 #endif

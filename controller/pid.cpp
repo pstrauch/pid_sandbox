@@ -22,4 +22,4 @@ double pid::compute(double error, double dt)
 
     assert(u <= 1 && u >= -1);
     return u;
-};
+}
