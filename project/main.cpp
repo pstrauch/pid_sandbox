@@ -32,9 +32,9 @@ int main()
     const double x0 = 1;
 
     //controller parameters
-    double k_p = 1;
-    double k_i = 1;
-    double k_d = 3;
+    double k_p = 3;     //1
+    double k_i = 1;   //0.5
+    double k_d = 4;    //4
     double ref = 0.5;
 
     //initialize objects
